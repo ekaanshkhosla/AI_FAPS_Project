@@ -1,0 +1,209 @@
+### Starting TaskPrologue of job 851115 on tg094 at Wed 03 Jul 2024 08:19:13 AM CEST
+Running on cores 64-95 with governor ondemand
+Wed Jul  3 08:19:13 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   33C    P0             54W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[I 2024-07-03 08:20:21,241] Using an existing study with name 'Efficient_V2_optuna_winding_large_quarter' instead of creating a new one.
+Best trial's number:  21
+Best score: 0.8965225850573288
+Best hyperparameters:
+image_size: 224
+batch_size: 16
+learning_rate: 7.5e-05
+fc_units: 256
+dropout_rate: 0.5
+layer_freeze_upto: features.2.6.block.1.1.bias
+Number of trials completed: 31
+Number of pruned trials: 81
+Total number of trails completed: 112
+Number of trials to run: 8
+==================== Training of trial number:113 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000008
+Fully connected layer: 1024
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+[I 2024-07-03 08:22:32,746] Trial 113 pruned. 
+Epoch 1/100, Training Loss: 0.2790, Training F1-score: 0.8215, Validation Loss: 0.2199, Validation F1-score: 0.8539
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:114 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000000
+Fully connected layer: 1024
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+[I 2024-07-03 08:24:38,301] Trial 114 pruned. 
+Epoch 1/100, Training Loss: 0.6827, Training F1-score: 0.3387, Validation Loss: 0.6738, Validation F1-score: 0.4083
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:115 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000008
+Fully connected layer: 1024
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+[I 2024-07-03 08:26:43,314] Trial 115 pruned. 
+Epoch 1/100, Training Loss: 0.2718, Training F1-score: 0.8397, Validation Loss: 0.2352, Validation F1-score: 0.8530
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:116 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000075
+Fully connected layer: 256
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+[I 2024-07-03 08:28:50,528] Trial 116 pruned. 
+Epoch 1/100, Training Loss: 0.1243, Training F1-score: 0.9315, Validation Loss: 0.2558, Validation F1-score: 0.8507
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:117 ====================
+Image size: 224
+Batch size: 16
+Learning rate: 0.000100
+Fully connected layer: 256
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+Epoch 1/100, Training Loss: 0.1266, Training F1-score: 0.9326, Validation Loss: 0.2369, Validation F1-score: 0.8759
+Best F1-score till now on the current trail on Validation data: 0.8759024228703208
+Epoch 2/100, Training Loss: 0.0461, Training F1-score: 0.9756, Validation Loss: 0.2469, Validation F1-score: 0.8802
+Best F1-score till now on the current trail on Validation data: 0.8801621770531934
+Epoch 3/100, Training Loss: 0.0403, Training F1-score: 0.9776, Validation Loss: 0.2988, Validation F1-score: 0.8588
+Epoch 4/100, Training Loss: 0.0322, Training F1-score: 0.9811, Validation Loss: 0.2596, Validation F1-score: 0.8735
+Epoch 5/100, Training Loss: 0.0288, Training F1-score: 0.9836, Validation Loss: 0.3304, Validation F1-score: 0.8617
+Epoch 6/100, Training Loss: 0.0307, Training F1-score: 0.9814, Validation Loss: 0.2320, Validation F1-score: 0.8814
+Best F1-score till now on the current trail on Validation data: 0.8813639225108272
+Epoch 7/100, Training Loss: 0.0246, Training F1-score: 0.9857, Validation Loss: 0.3137, Validation F1-score: 0.8669
+Epoch 8/100, Training Loss: 0.0237, Training F1-score: 0.9836, Validation Loss: 0.3044, Validation F1-score: 0.8760
+Epoch 9/100, Training Loss: 0.0246, Training F1-score: 0.9845, Validation Loss: 0.1942, Validation F1-score: 0.8912
+Best F1-score till now on the current trail on Validation data: 0.8912094159690712
+Epoch 10/100, Training Loss: 0.0208, Training F1-score: 0.9858, Validation Loss: 0.2314, Validation F1-score: 0.8831
+Epoch 11/100, Training Loss: 0.0203, Training F1-score: 0.9854, Validation Loss: 0.3471, Validation F1-score: 0.8714
+Epoch 12/100, Training Loss: 0.0183, Training F1-score: 0.9878, Validation Loss: 0.3334, Validation F1-score: 0.8825
+Epoch 13/100, Training Loss: 0.0184, Training F1-score: 0.9886, Validation Loss: 0.3132, Validation F1-score: 0.8863
+Epoch 14/100, Training Loss: 0.0168, Training F1-score: 0.9899, Validation Loss: 0.3411, Validation F1-score: 0.8429
+Epoch 15/100, Training Loss: 0.0146, Training F1-score: 0.9899, Validation Loss: 0.3322, Validation F1-score: 0.8866
+Epoch 16/100, Training Loss: 0.0130, Training F1-score: 0.9910, Validation Loss: 0.3386, Validation F1-score: 0.8792
+Epoch 17/100, Training Loss: 0.0150, Training F1-score: 0.9900, Validation Loss: 0.2785, Validation F1-score: 0.8914
+Best F1-score till now on the current trail on Validation data: 0.891377697087567
+Epoch 18/100, Training Loss: 0.0128, Training F1-score: 0.9912, Validation Loss: 0.2988, Validation F1-score: 0.8698
+Epoch 19/100, Training Loss: 0.0130, Training F1-score: 0.9914, Validation Loss: 0.3115, Validation F1-score: 0.8794
+Epoch 20/100, Training Loss: 0.0154, Training F1-score: 0.9902, Validation Loss: 0.4235, Validation F1-score: 0.8772
+Epoch 21/100, Training Loss: 0.0132, Training F1-score: 0.9929, Validation Loss: 0.3596, Validation F1-score: 0.8666
+Epoch 22/100, Training Loss: 0.0094, Training F1-score: 0.9931, Validation Loss: 0.3348, Validation F1-score: 0.8775
+Epoch 23/100, Training Loss: 0.0080, Training F1-score: 0.9947, Validation Loss: 0.4161, Validation F1-score: 0.8737
+Epoch 24/100, Training Loss: 0.0084, Training F1-score: 0.9945, Validation Loss: 0.3441, Validation F1-score: 0.8790
+Epoch 25/100, Training Loss: 0.0100, Training F1-score: 0.9955, Validation Loss: 0.3664, Validation F1-score: 0.8745
+Epoch 26/100, Training Loss: 0.0072, Training F1-score: 0.9959, Validation Loss: 0.3427, Validation F1-score: 0.8899
+[I 2024-07-03 08:58:22,780] Trial 117 finished with value: 0.8965225850573288 and parameters: {'image_size': 224, 'batch_size': 16, 'learning_rate': 0.0001, 'fc_units': 256, 'dropout_rate': 0.5, 'layer_freeze_upto': 'features.2.6.block.1.1.bias'}. Best is trial 21 with value: 0.8965225850573288.
+Epoch 27/100, Training Loss: 0.0066, Training F1-score: 0.9957, Validation Loss: 0.3804, Validation F1-score: 0.8729
+Early stopping triggered after 27 epochs.
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:118 ====================
+Image size: 224
+Batch size: 16
+Learning rate: 0.000010
+Fully connected layer: 1024
+Dropout rate: 0.500000
+Layer Freeze Upto: features.4.9.block.3.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+[I 2024-07-03 08:59:25,041] Trial 118 pruned. 
+Epoch 1/100, Training Loss: 0.2830, Training F1-score: 0.8325, Validation Loss: 0.2394, Validation F1-score: 0.8523
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:119 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.007500
+Fully connected layer: 256
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+[I 2024-07-03 09:01:31,767] Trial 119 pruned. 
+Epoch 1/100, Training Loss: 0.5676, Training F1-score: 0.4750, Validation Loss: 0.3283, Validation F1-score: 0.8074
+Best F1-score till now on Validation data: 0.8965225850573288
+==================== Training of trial number:120 ====================
+Image size: 224
+Batch size: 16
+Learning rate: 0.000075
+Fully connected layer: 256
+Dropout rate: 0.000000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best F1-score on Validation data until now: 0.8965225850573288
+Epoch 1/100, Training Loss: 0.1132, Training F1-score: 0.9385, Validation Loss: 0.2533, Validation F1-score: 0.8727
+Best F1-score till now on the current trail on Validation data: 0.8727289999002364
+Epoch 2/100, Training Loss: 0.0434, Training F1-score: 0.9758, Validation Loss: 0.2715, Validation F1-score: 0.8615
+Epoch 3/100, Training Loss: 0.0331, Training F1-score: 0.9822, Validation Loss: 0.2440, Validation F1-score: 0.8555
+Epoch 4/100, Training Loss: 0.0302, Training F1-score: 0.9823, Validation Loss: 0.3220, Validation F1-score: 0.8604
+Epoch 5/100, Training Loss: 0.0275, Training F1-score: 0.9847, Validation Loss: 0.2796, Validation F1-score: 0.8227
+Epoch 6/100, Training Loss: 0.0253, Training F1-score: 0.9843, Validation Loss: 0.3710, Validation F1-score: 0.8245
+Epoch 7/100, Training Loss: 0.0231, Training F1-score: 0.9850, Validation Loss: 0.2770, Validation F1-score: 0.8332
+Epoch 8/100, Training Loss: 0.0228, Training F1-score: 0.9859, Validation Loss: 0.2360, Validation F1-score: 0.8792
+Best F1-score till now on the current trail on Validation data: 0.8791876437006669
+Epoch 9/100, Training Loss: 0.0191, Training F1-score: 0.9876, Validation Loss: 0.2671, Validation F1-score: 0.8561
+Epoch 10/100, Training Loss: 0.0212, Training F1-score: 0.9869, Validation Loss: 0.2394, Validation F1-score: 0.8737
+Epoch 11/100, Training Loss: 0.0181, Training F1-score: 0.9879, Validation Loss: 0.2955, Validation F1-score: 0.8700
+Epoch 12/100, Training Loss: 0.0155, Training F1-score: 0.9905, Validation Loss: 0.2724, Validation F1-score: 0.8752
+Epoch 13/100, Training Loss: 0.0168, Training F1-score: 0.9889, Validation Loss: 0.3647, Validation F1-score: 0.8622
+Epoch 14/100, Training Loss: 0.0130, Training F1-score: 0.9909, Validation Loss: 0.2495, Validation F1-score: 0.8582
+Epoch 15/100, Training Loss: 0.0143, Training F1-score: 0.9909, Validation Loss: 0.2581, Validation F1-score: 0.8562
+Epoch 16/100, Training Loss: 0.0185, Training F1-score: 0.9900, Validation Loss: 0.3093, Validation F1-score: 0.8605
+Epoch 17/100, Training Loss: 0.0118, Training F1-score: 0.9922, Validation Loss: 0.3899, Validation F1-score: 0.8596
+[I 2024-07-03 09:21:50,824] Trial 120 finished with value: 0.8965225850573288 and parameters: {'image_size': 224, 'batch_size': 16, 'learning_rate': 7.5e-05, 'fc_units': 256, 'dropout_rate': 0, 'layer_freeze_upto': 'features.2.6.block.1.1.bias'}. Best is trial 21 with value: 0.8965225850573288.
+Epoch 18/100, Training Loss: 0.0102, Training F1-score: 0.9933, Validation Loss: 0.3605, Validation F1-score: 0.8655
+Early stopping triggered after 18 epochs.
+Best F1-score till now on Validation data: 0.8965225850573288
+Best trial's number:  21
+Best score: 0.8965225850573288
+Best hyperparameters:
+image_size: 224
+batch_size: 16
+learning_rate: 7.5e-05
+fc_units: 256
+dropout_rate: 0.5
+layer_freeze_upto: features.2.6.block.1.1.bias
+=== JOB_STATISTICS ===
+=== current date     : Wed 03 Jul 2024 09:21:57 AM CEST
+= Job-ID             : 851115 on tinygpu
+= Job-Name           : Efficient_V2_optuna_winding_large_quarter
+= Job-Command        : /home/woody/iwfa/iwfa054h/batch.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 01:02:54
+= Total RAM usage    : 2.1 GiB of requested  GiB (%)   
+= Node list          : tg094
+= Subm/Elig/Start/End: 2024-07-03T08:19:03 / 2024-07-03T08:19:03 / 2024-07-03T08:19:03 / 2024-07-03T09:21:57
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           71.6G   104.9G   209.7G        N/A     168K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:81:00.0, 674211, 69 %, 24 %, 7696 MiB, 3694260 ms

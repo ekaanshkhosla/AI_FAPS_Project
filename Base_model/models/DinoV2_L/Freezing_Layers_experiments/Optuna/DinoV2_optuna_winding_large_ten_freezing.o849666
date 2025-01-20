@@ -1,0 +1,634 @@
+### Starting TaskPrologue of job 849666 on tg090 at Sun 30 Jun 2024 09:21:25 AM CEST
+Running on cores 64-95 with governor ondemand
+Sun Jun 30 09:21:25 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   34C    P0             55W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[I 2024-06-30 09:22:30,719] Using an existing study with name 'DinoV2_optuna_winding_large_ten_freezing2' instead of creating a new one.
+Best trial's number:  132
+Best score: 0.8718434513182333
+Best hyperparameters:
+image_size: 224
+batch_size: 8
+learning_rate: 0.0001
+fc_units: 1024
+fc_units_2: 1024
+layer_freeze_upto: dino_model.blocks.6.ls2.gamma
+Number of trials completed: 47
+Number of pruned trials: 175
+Total number of trails completed: 222
+Number of trials to run: 28
+==================== Training of trial number:224 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.10.ls2.gamma
+Best F1-score on Validation data until now: 0.8718434513182333
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[I 2024-06-30 09:24:33,468] Trial 224 pruned. 
+Epoch 1/100, Training Loss: 0.1673, Training F1-score: 0.9136, Validation Loss: 0.3185, Validation F1-score: 0.7885
+Best F1-score till now on Validation data: 0.8718434513182333
+==================== Training of trial number:225 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8718434513182333
+Epoch 1/100, Training Loss: 0.1440, Training F1-score: 0.9272, Validation Loss: 0.2590, Validation F1-score: 0.8540
+Best F1-score till now on the current trail on Validation data: 0.8539981858720586
+Epoch 2/100, Training Loss: 0.0631, Training F1-score: 0.9716, Validation Loss: 0.2654, Validation F1-score: 0.8373
+Epoch 3/100, Training Loss: 0.0545, Training F1-score: 0.9734, Validation Loss: 0.3459, Validation F1-score: 0.8331
+Epoch 4/100, Training Loss: 0.0479, Training F1-score: 0.9791, Validation Loss: 0.3485, Validation F1-score: 0.8542
+Best F1-score till now on the current trail on Validation data: 0.8542195136886912
+Epoch 5/100, Training Loss: 0.0438, Training F1-score: 0.9802, Validation Loss: 0.3037, Validation F1-score: 0.8393
+Epoch 6/100, Training Loss: 0.0408, Training F1-score: 0.9795, Validation Loss: 0.4547, Validation F1-score: 0.8494
+Epoch 7/100, Training Loss: 0.0468, Training F1-score: 0.9766, Validation Loss: 0.3774, Validation F1-score: 0.8600
+Best F1-score till now on the current trail on Validation data: 0.8599872110273291
+Epoch 8/100, Training Loss: 0.0359, Training F1-score: 0.9836, Validation Loss: 0.4889, Validation F1-score: 0.8570
+Epoch 9/100, Training Loss: 0.0397, Training F1-score: 0.9818, Validation Loss: 0.3459, Validation F1-score: 0.8595
+Epoch 10/100, Training Loss: 0.0372, Training F1-score: 0.9818, Validation Loss: 0.4134, Validation F1-score: 0.8577
+Epoch 11/100, Training Loss: 0.0416, Training F1-score: 0.9825, Validation Loss: 0.3108, Validation F1-score: 0.8368
+Epoch 12/100, Training Loss: 0.0347, Training F1-score: 0.9838, Validation Loss: 0.3858, Validation F1-score: 0.8595
+Epoch 13/100, Training Loss: 0.0319, Training F1-score: 0.9839, Validation Loss: 0.3534, Validation F1-score: 0.8341
+Epoch 14/100, Training Loss: 0.0337, Training F1-score: 0.9835, Validation Loss: 0.3267, Validation F1-score: 0.8602
+Best F1-score till now on the current trail on Validation data: 0.8602133583273571
+Epoch 15/100, Training Loss: 0.0324, Training F1-score: 0.9842, Validation Loss: 0.3882, Validation F1-score: 0.8615
+Best F1-score till now on the current trail on Validation data: 0.8614896880430978
+Epoch 16/100, Training Loss: 0.0378, Training F1-score: 0.9817, Validation Loss: 0.3376, Validation F1-score: 0.8497
+Epoch 17/100, Training Loss: 0.0348, Training F1-score: 0.9833, Validation Loss: 0.5548, Validation F1-score: 0.8462
+Epoch 18/100, Training Loss: 0.0304, Training F1-score: 0.9865, Validation Loss: 0.4427, Validation F1-score: 0.8635
+Best F1-score till now on the current trail on Validation data: 0.8634663556906815
+Epoch 19/100, Training Loss: 0.0308, Training F1-score: 0.9851, Validation Loss: 0.4149, Validation F1-score: 0.8249
+Epoch 20/100, Training Loss: 0.0304, Training F1-score: 0.9858, Validation Loss: 0.3486, Validation F1-score: 0.8590
+Epoch 21/100, Training Loss: 0.0308, Training F1-score: 0.9846, Validation Loss: 0.4389, Validation F1-score: 0.8597
+Epoch 22/100, Training Loss: 0.0383, Training F1-score: 0.9825, Validation Loss: 0.3205, Validation F1-score: 0.8666
+Best F1-score till now on the current trail on Validation data: 0.8665534445740976
+Epoch 23/100, Training Loss: 0.0297, Training F1-score: 0.9851, Validation Loss: 0.3308, Validation F1-score: 0.8577
+Epoch 24/100, Training Loss: 0.0296, Training F1-score: 0.9860, Validation Loss: 0.3212, Validation F1-score: 0.8222
+Epoch 25/100, Training Loss: 0.0313, Training F1-score: 0.9846, Validation Loss: 0.3459, Validation F1-score: 0.8447
+Epoch 26/100, Training Loss: 0.0274, Training F1-score: 0.9872, Validation Loss: 0.3323, Validation F1-score: 0.8404
+Epoch 27/100, Training Loss: 0.0278, Training F1-score: 0.9873, Validation Loss: 0.3655, Validation F1-score: 0.8609
+Epoch 28/100, Training Loss: 0.0275, Training F1-score: 0.9865, Validation Loss: 0.3777, Validation F1-score: 0.8634
+Epoch 29/100, Training Loss: 0.0292, Training F1-score: 0.9854, Validation Loss: 0.3570, Validation F1-score: 0.8349
+Epoch 30/100, Training Loss: 0.0247, Training F1-score: 0.9869, Validation Loss: 0.4363, Validation F1-score: 0.8671
+Best F1-score till now on the current trail on Validation data: 0.8671311293015668
+Epoch 31/100, Training Loss: 0.0247, Training F1-score: 0.9883, Validation Loss: 0.3154, Validation F1-score: 0.8582
+Epoch 32/100, Training Loss: 0.0308, Training F1-score: 0.9850, Validation Loss: 0.3256, Validation F1-score: 0.8633
+Epoch 33/100, Training Loss: 0.0248, Training F1-score: 0.9885, Validation Loss: 0.3963, Validation F1-score: 0.8649
+Epoch 34/100, Training Loss: 0.0314, Training F1-score: 0.9850, Validation Loss: 0.3422, Validation F1-score: 0.8628
+Epoch 35/100, Training Loss: 0.0247, Training F1-score: 0.9881, Validation Loss: 0.4117, Validation F1-score: 0.8675
+Best F1-score till now on the current trail on Validation data: 0.8674910189348414
+Epoch 36/100, Training Loss: 0.0236, Training F1-score: 0.9878, Validation Loss: 0.3999, Validation F1-score: 0.8592
+Epoch 37/100, Training Loss: 0.0246, Training F1-score: 0.9877, Validation Loss: 0.4318, Validation F1-score: 0.8087
+Epoch 38/100, Training Loss: 0.0269, Training F1-score: 0.9864, Validation Loss: 0.3232, Validation F1-score: 0.8577
+Epoch 39/100, Training Loss: 0.0243, Training F1-score: 0.9878, Validation Loss: 0.3556, Validation F1-score: 0.8482
+Epoch 40/100, Training Loss: 0.0272, Training F1-score: 0.9867, Validation Loss: 0.3881, Validation F1-score: 0.8701
+Best F1-score till now on the current trail on Validation data: 0.8701104415270736
+Epoch 41/100, Training Loss: 0.0246, Training F1-score: 0.9867, Validation Loss: 0.4640, Validation F1-score: 0.8525
+Epoch 42/100, Training Loss: 0.0213, Training F1-score: 0.9903, Validation Loss: 0.4212, Validation F1-score: 0.8437
+Epoch 43/100, Training Loss: 0.0262, Training F1-score: 0.9877, Validation Loss: 0.4747, Validation F1-score: 0.8543
+Epoch 44/100, Training Loss: 0.0272, Training F1-score: 0.9864, Validation Loss: 0.4463, Validation F1-score: 0.8692
+Epoch 45/100, Training Loss: 0.0229, Training F1-score: 0.9894, Validation Loss: 0.4053, Validation F1-score: 0.8601
+Epoch 46/100, Training Loss: 0.0251, Training F1-score: 0.9868, Validation Loss: 0.4292, Validation F1-score: 0.8376
+Epoch 47/100, Training Loss: 0.0233, Training F1-score: 0.9880, Validation Loss: 0.3075, Validation F1-score: 0.8380
+Epoch 48/100, Training Loss: 0.0224, Training F1-score: 0.9886, Validation Loss: 0.3662, Validation F1-score: 0.8426
+Epoch 49/100, Training Loss: 0.0227, Training F1-score: 0.9877, Validation Loss: 0.3823, Validation F1-score: 0.8595
+[I 2024-06-30 10:56:06,415] Trial 225 finished with value: 0.8718434513182333 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 132 with value: 0.8718434513182333.
+Epoch 50/100, Training Loss: 0.0267, Training F1-score: 0.9873, Validation Loss: 0.3128, Validation F1-score: 0.8442
+Early stopping triggered after 50 epochs.
+Best F1-score till now on Validation data: 0.8718434513182333
+==================== Training of trial number:226 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8718434513182333
+Epoch 1/100, Training Loss: 0.1509, Training F1-score: 0.9220, Validation Loss: 0.2511, Validation F1-score: 0.8511
+Best F1-score till now on the current trail on Validation data: 0.851057509666263
+Epoch 2/100, Training Loss: 0.0593, Training F1-score: 0.9731, Validation Loss: 0.3439, Validation F1-score: 0.8270
+Epoch 3/100, Training Loss: 0.0581, Training F1-score: 0.9737, Validation Loss: 0.2852, Validation F1-score: 0.8288
+Epoch 4/100, Training Loss: 0.0478, Training F1-score: 0.9790, Validation Loss: 0.2894, Validation F1-score: 0.8530
+Best F1-score till now on the current trail on Validation data: 0.8529614748544564
+Epoch 5/100, Training Loss: 0.0464, Training F1-score: 0.9782, Validation Loss: 0.3309, Validation F1-score: 0.8469
+Epoch 6/100, Training Loss: 0.0428, Training F1-score: 0.9798, Validation Loss: 0.3483, Validation F1-score: 0.8555
+Best F1-score till now on the current trail on Validation data: 0.8555417322052175
+Epoch 7/100, Training Loss: 0.0382, Training F1-score: 0.9834, Validation Loss: 0.3254, Validation F1-score: 0.8580
+Best F1-score till now on the current trail on Validation data: 0.8580184597813793
+Epoch 8/100, Training Loss: 0.0423, Training F1-score: 0.9812, Validation Loss: 0.4718, Validation F1-score: 0.8547
+Epoch 9/100, Training Loss: 0.0391, Training F1-score: 0.9816, Validation Loss: 0.3134, Validation F1-score: 0.8458
+Epoch 10/100, Training Loss: 0.0325, Training F1-score: 0.9842, Validation Loss: 0.5480, Validation F1-score: 0.8482
+Epoch 11/100, Training Loss: 0.0394, Training F1-score: 0.9813, Validation Loss: 0.3372, Validation F1-score: 0.8657
+Best F1-score till now on the current trail on Validation data: 0.8656776128693776
+Epoch 12/100, Training Loss: 0.0358, Training F1-score: 0.9831, Validation Loss: 0.3802, Validation F1-score: 0.8444
+Epoch 13/100, Training Loss: 0.0353, Training F1-score: 0.9825, Validation Loss: 0.3358, Validation F1-score: 0.8505
+Epoch 14/100, Training Loss: 0.0329, Training F1-score: 0.9841, Validation Loss: 0.4298, Validation F1-score: 0.8532
+Epoch 15/100, Training Loss: 0.0342, Training F1-score: 0.9824, Validation Loss: 0.3346, Validation F1-score: 0.8554
+Epoch 16/100, Training Loss: 0.0345, Training F1-score: 0.9846, Validation Loss: 0.3872, Validation F1-score: 0.8639
+Epoch 17/100, Training Loss: 0.0305, Training F1-score: 0.9849, Validation Loss: 0.3814, Validation F1-score: 0.8642
+Epoch 18/100, Training Loss: 0.0324, Training F1-score: 0.9838, Validation Loss: 0.3724, Validation F1-score: 0.8526
+Epoch 19/100, Training Loss: 0.0308, Training F1-score: 0.9854, Validation Loss: 0.2950, Validation F1-score: 0.8490
+Epoch 20/100, Training Loss: 0.0301, Training F1-score: 0.9846, Validation Loss: 0.3321, Validation F1-score: 0.8552
+[I 2024-06-30 11:34:27,662] Trial 226 finished with value: 0.8718434513182333 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 132 with value: 0.8718434513182333.
+Epoch 21/100, Training Loss: 0.0322, Training F1-score: 0.9845, Validation Loss: 0.3475, Validation F1-score: 0.8480
+Early stopping triggered after 21 epochs.
+Best F1-score till now on Validation data: 0.8718434513182333
+==================== Training of trial number:227 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8718434513182333
+Epoch 1/100, Training Loss: 0.1398, Training F1-score: 0.9309, Validation Loss: 0.2730, Validation F1-score: 0.8491
+Best F1-score till now on the current trail on Validation data: 0.849148831964928
+Epoch 2/100, Training Loss: 0.0633, Training F1-score: 0.9692, Validation Loss: 0.4197, Validation F1-score: 0.7868
+Epoch 3/100, Training Loss: 0.0533, Training F1-score: 0.9759, Validation Loss: 0.4201, Validation F1-score: 0.8260
+Epoch 4/100, Training Loss: 0.0459, Training F1-score: 0.9785, Validation Loss: 0.3008, Validation F1-score: 0.8584
+Best F1-score till now on the current trail on Validation data: 0.858374437242165
+Epoch 5/100, Training Loss: 0.0419, Training F1-score: 0.9810, Validation Loss: 0.2998, Validation F1-score: 0.8203
+Epoch 6/100, Training Loss: 0.0499, Training F1-score: 0.9758, Validation Loss: 0.4258, Validation F1-score: 0.8558
+Epoch 7/100, Training Loss: 0.0377, Training F1-score: 0.9821, Validation Loss: 0.4556, Validation F1-score: 0.8553
+Epoch 8/100, Training Loss: 0.0394, Training F1-score: 0.9802, Validation Loss: 0.3494, Validation F1-score: 0.8535
+Epoch 9/100, Training Loss: 0.0361, Training F1-score: 0.9839, Validation Loss: 0.2954, Validation F1-score: 0.8502
+Epoch 10/100, Training Loss: 0.0347, Training F1-score: 0.9835, Validation Loss: 0.2556, Validation F1-score: 0.8501
+Epoch 11/100, Training Loss: 0.0380, Training F1-score: 0.9818, Validation Loss: 0.3160, Validation F1-score: 0.8307
+Epoch 12/100, Training Loss: 0.0349, Training F1-score: 0.9837, Validation Loss: 0.4030, Validation F1-score: 0.7858
+Epoch 13/100, Training Loss: 0.0326, Training F1-score: 0.9852, Validation Loss: 0.3610, Validation F1-score: 0.8595
+Best F1-score till now on the current trail on Validation data: 0.8595132491866901
+Epoch 14/100, Training Loss: 0.0330, Training F1-score: 0.9847, Validation Loss: 0.2864, Validation F1-score: 0.8566
+Epoch 15/100, Training Loss: 0.0351, Training F1-score: 0.9826, Validation Loss: 0.2527, Validation F1-score: 0.8562
+Epoch 16/100, Training Loss: 0.0323, Training F1-score: 0.9834, Validation Loss: 0.4800, Validation F1-score: 0.8620
+Best F1-score till now on the current trail on Validation data: 0.862040906005209
+Epoch 17/100, Training Loss: 0.0333, Training F1-score: 0.9850, Validation Loss: 0.3820, Validation F1-score: 0.8572
+Epoch 18/100, Training Loss: 0.0309, Training F1-score: 0.9854, Validation Loss: 0.3319, Validation F1-score: 0.8280
+Epoch 19/100, Training Loss: 0.0302, Training F1-score: 0.9850, Validation Loss: 0.3842, Validation F1-score: 0.8642
+Best F1-score till now on the current trail on Validation data: 0.8642298483871501
+Epoch 20/100, Training Loss: 0.0337, Training F1-score: 0.9858, Validation Loss: 0.3366, Validation F1-score: 0.8584
+Epoch 21/100, Training Loss: 0.0269, Training F1-score: 0.9876, Validation Loss: 0.3655, Validation F1-score: 0.8652
+Best F1-score till now on the current trail on Validation data: 0.8651620399610195
+Epoch 22/100, Training Loss: 0.0304, Training F1-score: 0.9857, Validation Loss: 0.3886, Validation F1-score: 0.8185
+Epoch 23/100, Training Loss: 0.0261, Training F1-score: 0.9875, Validation Loss: 0.4231, Validation F1-score: 0.8480
+Epoch 24/100, Training Loss: 0.0314, Training F1-score: 0.9863, Validation Loss: 0.4318, Validation F1-score: 0.8237
+Epoch 25/100, Training Loss: 0.0288, Training F1-score: 0.9846, Validation Loss: 0.3529, Validation F1-score: 0.8586
+Epoch 26/100, Training Loss: 0.0276, Training F1-score: 0.9859, Validation Loss: 0.4004, Validation F1-score: 0.8670
+Best F1-score till now on the current trail on Validation data: 0.8670127375675641
+Epoch 27/100, Training Loss: 0.0263, Training F1-score: 0.9874, Validation Loss: 0.3769, Validation F1-score: 0.8400
+Epoch 28/100, Training Loss: 0.0323, Training F1-score: 0.9844, Validation Loss: 0.3248, Validation F1-score: 0.8620
+Epoch 29/100, Training Loss: 0.0289, Training F1-score: 0.9858, Validation Loss: 0.3708, Validation F1-score: 0.8669
+Epoch 30/100, Training Loss: 0.0254, Training F1-score: 0.9875, Validation Loss: 0.4138, Validation F1-score: 0.8355
+Epoch 31/100, Training Loss: 0.0303, Training F1-score: 0.9863, Validation Loss: 0.3275, Validation F1-score: 0.8504
+Epoch 32/100, Training Loss: 0.0265, Training F1-score: 0.9877, Validation Loss: 0.3752, Validation F1-score: 0.8632
+Epoch 33/100, Training Loss: 0.0259, Training F1-score: 0.9869, Validation Loss: 0.3954, Validation F1-score: 0.8324
+Epoch 34/100, Training Loss: 0.0288, Training F1-score: 0.9851, Validation Loss: 0.3295, Validation F1-score: 0.8727
+Best F1-score till now on the current trail on Validation data: 0.8726505132437764
+Best F1-score till now on Validation data: 0.8726505132437764
+Epoch 35/100, Training Loss: 0.0245, Training F1-score: 0.9871, Validation Loss: 0.3494, Validation F1-score: 0.8361
+Epoch 36/100, Training Loss: 0.0244, Training F1-score: 0.9874, Validation Loss: 0.3371, Validation F1-score: 0.8527
+Epoch 37/100, Training Loss: 0.0241, Training F1-score: 0.9876, Validation Loss: 0.4346, Validation F1-score: 0.8620
+Epoch 38/100, Training Loss: 0.0257, Training F1-score: 0.9869, Validation Loss: 0.3517, Validation F1-score: 0.8600
+Epoch 39/100, Training Loss: 0.0258, Training F1-score: 0.9868, Validation Loss: 0.3602, Validation F1-score: 0.8588
+Epoch 40/100, Training Loss: 0.0222, Training F1-score: 0.9894, Validation Loss: 0.3512, Validation F1-score: 0.8626
+Epoch 41/100, Training Loss: 0.0261, Training F1-score: 0.9874, Validation Loss: 0.4277, Validation F1-score: 0.8628
+Epoch 42/100, Training Loss: 0.0254, Training F1-score: 0.9871, Validation Loss: 0.3921, Validation F1-score: 0.8289
+Epoch 43/100, Training Loss: 0.0260, Training F1-score: 0.9873, Validation Loss: 0.5012, Validation F1-score: 0.8584
+[I 2024-06-30 12:54:57,877] Trial 227 finished with value: 0.8726505132437764 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 227 with value: 0.8726505132437764.
+Epoch 44/100, Training Loss: 0.0241, Training F1-score: 0.9876, Validation Loss: 0.4091, Validation F1-score: 0.8496
+Early stopping triggered after 44 epochs.
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:228 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 12:56:51,117] Trial 228 pruned. 
+Epoch 1/100, Training Loss: 0.1515, Training F1-score: 0.9236, Validation Loss: 0.3787, Validation F1-score: 0.8438
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:229 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+Epoch 1/100, Training Loss: 0.1571, Training F1-score: 0.9199, Validation Loss: 0.2946, Validation F1-score: 0.8545
+Best F1-score till now on the current trail on Validation data: 0.8544831293770772
+Epoch 2/100, Training Loss: 0.0657, Training F1-score: 0.9681, Validation Loss: 0.2961, Validation F1-score: 0.8363
+Epoch 3/100, Training Loss: 0.0531, Training F1-score: 0.9759, Validation Loss: 0.3486, Validation F1-score: 0.8556
+Best F1-score till now on the current trail on Validation data: 0.8556463203678705
+Epoch 4/100, Training Loss: 0.0505, Training F1-score: 0.9755, Validation Loss: 0.3199, Validation F1-score: 0.8086
+Epoch 5/100, Training Loss: 0.0410, Training F1-score: 0.9793, Validation Loss: 0.3321, Validation F1-score: 0.8307
+Epoch 6/100, Training Loss: 0.0396, Training F1-score: 0.9819, Validation Loss: 0.3245, Validation F1-score: 0.8489
+Epoch 7/100, Training Loss: 0.0393, Training F1-score: 0.9816, Validation Loss: 0.2651, Validation F1-score: 0.8423
+Epoch 8/100, Training Loss: 0.0410, Training F1-score: 0.9816, Validation Loss: 0.3487, Validation F1-score: 0.8023
+Epoch 9/100, Training Loss: 0.0451, Training F1-score: 0.9785, Validation Loss: 0.4518, Validation F1-score: 0.8472
+Epoch 10/100, Training Loss: 0.0356, Training F1-score: 0.9841, Validation Loss: 0.3392, Validation F1-score: 0.8428
+Epoch 11/100, Training Loss: 0.0350, Training F1-score: 0.9840, Validation Loss: 0.3466, Validation F1-score: 0.8294
+Epoch 12/100, Training Loss: 0.0448, Training F1-score: 0.9810, Validation Loss: 0.2715, Validation F1-score: 0.8000
+[I 2024-06-30 13:20:35,474] Trial 229 finished with value: 0.8726505132437764 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 227 with value: 0.8726505132437764.
+Epoch 13/100, Training Loss: 0.0372, Training F1-score: 0.9827, Validation Loss: 0.3314, Validation F1-score: 0.8461
+Early stopping triggered after 13 epochs.
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:230 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:22:28,907] Trial 230 pruned. 
+Epoch 1/100, Training Loss: 0.1551, Training F1-score: 0.9231, Validation Loss: 0.3330, Validation F1-score: 0.8254
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:231 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0000010000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:24:22,147] Trial 231 pruned. 
+Epoch 1/100, Training Loss: 0.6437, Training F1-score: 0.6048, Validation Loss: 0.6008, Validation F1-score: 0.4732
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:232 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:26:15,381] Trial 232 pruned. 
+Epoch 1/100, Training Loss: 0.1427, Training F1-score: 0.9294, Validation Loss: 0.3109, Validation F1-score: 0.8459
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:233 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:28:08,707] Trial 233 pruned. 
+Epoch 1/100, Training Loss: 0.1400, Training F1-score: 0.9290, Validation Loss: 0.4212, Validation F1-score: 0.8283
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:234 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:30:02,158] Trial 234 pruned. 
+Epoch 1/100, Training Loss: 0.1323, Training F1-score: 0.9374, Validation Loss: 0.2447, Validation F1-score: 0.8396
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:235 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:31:56,131] Trial 235 pruned. 
+Epoch 1/100, Training Loss: 0.1370, Training F1-score: 0.9319, Validation Loss: 0.2356, Validation F1-score: 0.8474
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:236 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:33:49,450] Trial 236 pruned. 
+Epoch 1/100, Training Loss: 0.1447, Training F1-score: 0.9303, Validation Loss: 0.2808, Validation F1-score: 0.8242
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:237 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:35:42,581] Trial 237 pruned. 
+Epoch 1/100, Training Loss: 0.1457, Training F1-score: 0.9271, Validation Loss: 0.3348, Validation F1-score: 0.8445
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:238 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.11.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:37:35,704] Trial 238 pruned. 
+Epoch 1/100, Training Loss: 0.1425, Training F1-score: 0.9260, Validation Loss: 0.2814, Validation F1-score: 0.8428
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:239 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0000001000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:39:29,080] Trial 239 pruned. 
+Epoch 1/100, Training Loss: 0.6963, Training F1-score: 0.0004, Validation Loss: 0.6669, Validation F1-score: 0.0020
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:240 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 13:41:22,241] Trial 240 pruned. 
+Epoch 1/100, Training Loss: 0.1548, Training F1-score: 0.9201, Validation Loss: 0.3541, Validation F1-score: 0.8418
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:241 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+Epoch 1/100, Training Loss: 0.1528, Training F1-score: 0.9218, Validation Loss: 0.2710, Validation F1-score: 0.8547
+Best F1-score till now on the current trail on Validation data: 0.8546861159519947
+Epoch 2/100, Training Loss: 0.0647, Training F1-score: 0.9697, Validation Loss: 0.2881, Validation F1-score: 0.8134
+Epoch 3/100, Training Loss: 0.0504, Training F1-score: 0.9764, Validation Loss: 0.2914, Validation F1-score: 0.8486
+Epoch 4/100, Training Loss: 0.0441, Training F1-score: 0.9805, Validation Loss: 0.3183, Validation F1-score: 0.8131
+Epoch 5/100, Training Loss: 0.0476, Training F1-score: 0.9778, Validation Loss: 0.2932, Validation F1-score: 0.8571
+Best F1-score till now on the current trail on Validation data: 0.8570923485815395
+Epoch 6/100, Training Loss: 0.0399, Training F1-score: 0.9811, Validation Loss: 0.3141, Validation F1-score: 0.8330
+Epoch 7/100, Training Loss: 0.0438, Training F1-score: 0.9800, Validation Loss: 0.2988, Validation F1-score: 0.8595
+Best F1-score till now on the current trail on Validation data: 0.8595128042165663
+Epoch 8/100, Training Loss: 0.0394, Training F1-score: 0.9817, Validation Loss: 0.3156, Validation F1-score: 0.8556
+Epoch 9/100, Training Loss: 0.0384, Training F1-score: 0.9807, Validation Loss: 0.3939, Validation F1-score: 0.8316
+Epoch 10/100, Training Loss: 0.0370, Training F1-score: 0.9832, Validation Loss: 0.4411, Validation F1-score: 0.8614
+Best F1-score till now on the current trail on Validation data: 0.861372061456572
+Epoch 11/100, Training Loss: 0.0372, Training F1-score: 0.9813, Validation Loss: 0.3908, Validation F1-score: 0.8585
+Epoch 12/100, Training Loss: 0.0414, Training F1-score: 0.9813, Validation Loss: 0.2949, Validation F1-score: 0.8631
+Best F1-score till now on the current trail on Validation data: 0.8630754986059959
+Epoch 13/100, Training Loss: 0.0339, Training F1-score: 0.9839, Validation Loss: 0.4272, Validation F1-score: 0.8139
+Epoch 14/100, Training Loss: 0.0311, Training F1-score: 0.9841, Validation Loss: 0.4517, Validation F1-score: 0.8311
+Epoch 15/100, Training Loss: 0.0324, Training F1-score: 0.9858, Validation Loss: 0.3252, Validation F1-score: 0.8292
+Epoch 16/100, Training Loss: 0.0331, Training F1-score: 0.9854, Validation Loss: 0.4243, Validation F1-score: 0.8508
+Epoch 17/100, Training Loss: 0.0311, Training F1-score: 0.9858, Validation Loss: 0.3196, Validation F1-score: 0.8615
+Epoch 18/100, Training Loss: 0.0324, Training F1-score: 0.9832, Validation Loss: 0.3026, Validation F1-score: 0.8221
+Epoch 19/100, Training Loss: 0.0279, Training F1-score: 0.9864, Validation Loss: 0.3844, Validation F1-score: 0.8251
+Epoch 20/100, Training Loss: 0.0313, Training F1-score: 0.9861, Validation Loss: 0.4561, Validation F1-score: 0.8420
+Epoch 21/100, Training Loss: 0.0307, Training F1-score: 0.9857, Validation Loss: 0.3859, Validation F1-score: 0.8562
+[I 2024-06-30 14:21:30,286] Trial 241 finished with value: 0.8726505132437764 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 227 with value: 0.8726505132437764.
+Epoch 22/100, Training Loss: 0.0321, Training F1-score: 0.9864, Validation Loss: 0.3962, Validation F1-score: 0.8558
+Early stopping triggered after 22 epochs.
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:242 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 14:23:23,448] Trial 242 pruned. 
+Epoch 1/100, Training Loss: 0.1477, Training F1-score: 0.9252, Validation Loss: 0.2888, Validation F1-score: 0.8469
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:243 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.8.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+Epoch 1/100, Training Loss: 0.1871, Training F1-score: 0.9035, Validation Loss: 0.2740, Validation F1-score: 0.8487
+Best F1-score till now on the current trail on Validation data: 0.8487257798840101
+Epoch 2/100, Training Loss: 0.0628, Training F1-score: 0.9717, Validation Loss: 0.3516, Validation F1-score: 0.7243
+Epoch 3/100, Training Loss: 0.0530, Training F1-score: 0.9761, Validation Loss: 0.3378, Validation F1-score: 0.8466
+Epoch 4/100, Training Loss: 0.0481, Training F1-score: 0.9795, Validation Loss: 0.2755, Validation F1-score: 0.8252
+Epoch 5/100, Training Loss: 0.0408, Training F1-score: 0.9808, Validation Loss: 0.4047, Validation F1-score: 0.8155
+Epoch 6/100, Training Loss: 0.0441, Training F1-score: 0.9799, Validation Loss: 0.3232, Validation F1-score: 0.8559
+Best F1-score till now on the current trail on Validation data: 0.855856920762168
+Epoch 7/100, Training Loss: 0.0405, Training F1-score: 0.9810, Validation Loss: 0.3647, Validation F1-score: 0.8599
+Best F1-score till now on the current trail on Validation data: 0.8599464040742689
+Epoch 8/100, Training Loss: 0.0462, Training F1-score: 0.9785, Validation Loss: 0.2896, Validation F1-score: 0.8447
+Epoch 9/100, Training Loss: 0.0363, Training F1-score: 0.9829, Validation Loss: 0.2478, Validation F1-score: 0.8596
+Epoch 10/100, Training Loss: 0.0365, Training F1-score: 0.9835, Validation Loss: 0.2840, Validation F1-score: 0.8515
+Epoch 11/100, Training Loss: 0.0354, Training F1-score: 0.9818, Validation Loss: 0.3530, Validation F1-score: 0.8521
+Epoch 12/100, Training Loss: 0.0341, Training F1-score: 0.9851, Validation Loss: 0.3606, Validation F1-score: 0.8580
+Epoch 13/100, Training Loss: 0.0363, Training F1-score: 0.9835, Validation Loss: 0.3616, Validation F1-score: 0.8482
+Epoch 14/100, Training Loss: 0.0349, Training F1-score: 0.9823, Validation Loss: 0.3326, Validation F1-score: 0.8047
+Epoch 15/100, Training Loss: 0.0365, Training F1-score: 0.9837, Validation Loss: 0.3123, Validation F1-score: 0.8368
+Epoch 16/100, Training Loss: 0.0344, Training F1-score: 0.9842, Validation Loss: 0.3679, Validation F1-score: 0.8660
+Best F1-score till now on the current trail on Validation data: 0.8659991791574337
+Epoch 17/100, Training Loss: 0.0309, Training F1-score: 0.9851, Validation Loss: 0.3731, Validation F1-score: 0.8331
+Epoch 18/100, Training Loss: 0.0324, Training F1-score: 0.9841, Validation Loss: 0.3304, Validation F1-score: 0.8603
+Epoch 19/100, Training Loss: 0.0324, Training F1-score: 0.9858, Validation Loss: 0.3028, Validation F1-score: 0.8411
+Epoch 20/100, Training Loss: 0.0288, Training F1-score: 0.9860, Validation Loss: 0.6742, Validation F1-score: 0.7789
+Epoch 21/100, Training Loss: 0.0336, Training F1-score: 0.9851, Validation Loss: 0.4269, Validation F1-score: 0.8622
+Epoch 22/100, Training Loss: 0.0305, Training F1-score: 0.9852, Validation Loss: 0.3153, Validation F1-score: 0.8570
+Epoch 23/100, Training Loss: 0.0299, Training F1-score: 0.9870, Validation Loss: 0.2986, Validation F1-score: 0.8419
+Epoch 24/100, Training Loss: 0.0298, Training F1-score: 0.9856, Validation Loss: 0.3779, Validation F1-score: 0.8654
+Epoch 25/100, Training Loss: 0.0302, Training F1-score: 0.9851, Validation Loss: 0.3742, Validation F1-score: 0.8627
+[I 2024-06-30 15:10:58,503] Trial 243 finished with value: 0.8726505132437764 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.8.ls2.gamma'}. Best is trial 227 with value: 0.8726505132437764.
+Epoch 26/100, Training Loss: 0.0307, Training F1-score: 0.9849, Validation Loss: 0.3442, Validation F1-score: 0.8276
+Early stopping triggered after 26 epochs.
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:244 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.8.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 15:12:51,620] Trial 244 pruned. 
+Epoch 1/100, Training Loss: 0.1457, Training F1-score: 0.9303, Validation Loss: 0.3584, Validation F1-score: 0.8447
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:245 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.4.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 15:14:45,006] Trial 245 pruned. 
+Epoch 1/100, Training Loss: 0.1489, Training F1-score: 0.9230, Validation Loss: 0.2938, Validation F1-score: 0.8456
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:246 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.8.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 15:16:38,212] Trial 246 pruned. 
+Epoch 1/100, Training Loss: 0.1497, Training F1-score: 0.9279, Validation Loss: 0.3134, Validation F1-score: 0.8449
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:247 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0002500000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.8.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 15:18:31,355] Trial 247 pruned. 
+Epoch 1/100, Training Loss: 0.1738, Training F1-score: 0.9124, Validation Loss: 0.3056, Validation F1-score: 0.8363
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:248 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.8.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 15:20:24,679] Trial 248 pruned. 
+Epoch 1/100, Training Loss: 0.1427, Training F1-score: 0.9304, Validation Loss: 0.2726, Validation F1-score: 0.8354
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:249 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.7.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 15:22:17,886] Trial 249 pruned. 
+Epoch 1/100, Training Loss: 0.1492, Training F1-score: 0.9252, Validation Loss: 0.2735, Validation F1-score: 0.8086
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:250 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.2.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+Epoch 1/100, Training Loss: 0.1579, Training F1-score: 0.9192, Validation Loss: 0.2994, Validation F1-score: 0.8521
+Best F1-score till now on the current trail on Validation data: 0.8521462500718598
+Epoch 2/100, Training Loss: 0.0656, Training F1-score: 0.9682, Validation Loss: 0.2941, Validation F1-score: 0.8218
+Epoch 3/100, Training Loss: 0.0512, Training F1-score: 0.9770, Validation Loss: 0.3044, Validation F1-score: 0.8009
+Epoch 4/100, Training Loss: 0.0506, Training F1-score: 0.9773, Validation Loss: 0.3007, Validation F1-score: 0.8569
+Best F1-score till now on the current trail on Validation data: 0.8568704685979572
+Epoch 5/100, Training Loss: 0.0423, Training F1-score: 0.9789, Validation Loss: 0.4060, Validation F1-score: 0.7965
+Epoch 6/100, Training Loss: 0.0481, Training F1-score: 0.9774, Validation Loss: 0.4507, Validation F1-score: 0.8568
+Epoch 7/100, Training Loss: 0.0403, Training F1-score: 0.9818, Validation Loss: 0.3336, Validation F1-score: 0.8533
+Epoch 8/100, Training Loss: 0.0418, Training F1-score: 0.9806, Validation Loss: 0.3069, Validation F1-score: 0.8505
+Epoch 9/100, Training Loss: 0.0359, Training F1-score: 0.9831, Validation Loss: 0.3449, Validation F1-score: 0.8579
+Best F1-score till now on the current trail on Validation data: 0.857936139868155
+Epoch 10/100, Training Loss: 0.0370, Training F1-score: 0.9826, Validation Loss: 0.4320, Validation F1-score: 0.7801
+Epoch 11/100, Training Loss: 0.0352, Training F1-score: 0.9837, Validation Loss: 0.3119, Validation F1-score: 0.8415
+Epoch 12/100, Training Loss: 0.0364, Training F1-score: 0.9829, Validation Loss: 0.3606, Validation F1-score: 0.8448
+Epoch 13/100, Training Loss: 0.0364, Training F1-score: 0.9830, Validation Loss: 0.3485, Validation F1-score: 0.8320
+Epoch 14/100, Training Loss: 0.0351, Training F1-score: 0.9825, Validation Loss: 0.3139, Validation F1-score: 0.8399
+Epoch 15/100, Training Loss: 0.0310, Training F1-score: 0.9862, Validation Loss: 0.3088, Validation F1-score: 0.8618
+Best F1-score till now on the current trail on Validation data: 0.8617736385394159
+Epoch 16/100, Training Loss: 0.0355, Training F1-score: 0.9842, Validation Loss: 0.2858, Validation F1-score: 0.8639
+Best F1-score till now on the current trail on Validation data: 0.8638717597288065
+Epoch 17/100, Training Loss: 0.0332, Training F1-score: 0.9831, Validation Loss: 0.3357, Validation F1-score: 0.8557
+Epoch 18/100, Training Loss: 0.0294, Training F1-score: 0.9861, Validation Loss: 0.6058, Validation F1-score: 0.8468
+Epoch 19/100, Training Loss: 0.0329, Training F1-score: 0.9848, Validation Loss: 0.4129, Validation F1-score: 0.8596
+Epoch 20/100, Training Loss: 0.0320, Training F1-score: 0.9835, Validation Loss: 0.3472, Validation F1-score: 0.8511
+Epoch 21/100, Training Loss: 0.0308, Training F1-score: 0.9847, Validation Loss: 0.2928, Validation F1-score: 0.8597
+Epoch 22/100, Training Loss: 0.0300, Training F1-score: 0.9857, Validation Loss: 0.3225, Validation F1-score: 0.8413
+Epoch 23/100, Training Loss: 0.0280, Training F1-score: 0.9855, Validation Loss: 0.5067, Validation F1-score: 0.8575
+Epoch 24/100, Training Loss: 0.0287, Training F1-score: 0.9870, Validation Loss: 0.3533, Validation F1-score: 0.8599
+Epoch 25/100, Training Loss: 0.0308, Training F1-score: 0.9846, Validation Loss: 0.3923, Validation F1-score: 0.8663
+Best F1-score till now on the current trail on Validation data: 0.8663212302014515
+Epoch 26/100, Training Loss: 0.0265, Training F1-score: 0.9861, Validation Loss: 0.3616, Validation F1-score: 0.8519
+Epoch 27/100, Training Loss: 0.0312, Training F1-score: 0.9853, Validation Loss: 0.4103, Validation F1-score: 0.8265
+Epoch 28/100, Training Loss: 0.0291, Training F1-score: 0.9849, Validation Loss: 0.4625, Validation F1-score: 0.8032
+Epoch 29/100, Training Loss: 0.0319, Training F1-score: 0.9843, Validation Loss: 0.3847, Validation F1-score: 0.8625
+Epoch 30/100, Training Loss: 0.0265, Training F1-score: 0.9862, Validation Loss: 0.3750, Validation F1-score: 0.8564
+Epoch 31/100, Training Loss: 0.0286, Training F1-score: 0.9861, Validation Loss: 0.2836, Validation F1-score: 0.8418
+Epoch 32/100, Training Loss: 0.0275, Training F1-score: 0.9870, Validation Loss: 0.7173, Validation F1-score: 0.7665
+Epoch 33/100, Training Loss: 0.0294, Training F1-score: 0.9859, Validation Loss: 0.5149, Validation F1-score: 0.8548
+Epoch 34/100, Training Loss: 0.0280, Training F1-score: 0.9864, Validation Loss: 0.3778, Validation F1-score: 0.8588
+[I 2024-06-30 16:26:17,119] Trial 250 finished with value: 0.8726505132437764 and parameters: {'image_size': 224, 'batch_size': 8, 'learning_rate': 0.0001, 'fc_units': 1024, 'fc_units_2': 1024, 'layer_freeze_upto': 'dino_model.blocks.2.ls2.gamma'}. Best is trial 227 with value: 0.8726505132437764.
+Epoch 35/100, Training Loss: 0.0232, Training F1-score: 0.9895, Validation Loss: 0.4222, Validation F1-score: 0.8611
+Early stopping triggered after 35 epochs.
+Best F1-score till now on Validation data: 0.8726505132437764
+==================== Training of trial number:251 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0001000000
+Fully connected units 1: 1024
+Fully connected units 2: 1024
+Freeze layer upto: dino_model.blocks.2.ls2.gamma
+Best F1-score on Validation data until now: 0.8726505132437764
+[I 2024-06-30 16:28:10,362] Trial 251 pruned. 
+Epoch 1/100, Training Loss: 0.1348, Training F1-score: 0.9344, Validation Loss: 0.2481, Validation F1-score: 0.8248
+Best F1-score till now on Validation data: 0.8726505132437764
+Best trial's number:  227
+Best score: 0.8726505132437764
+Best hyperparameters:
+image_size: 224
+batch_size: 8
+learning_rate: 0.0001
+fc_units: 1024
+fc_units_2: 1024
+layer_freeze_upto: dino_model.blocks.7.ls2.gamma
+=== JOB_STATISTICS ===
+=== current date     : Sun 30 Jun 2024 04:28:18 PM CEST
+= Job-ID             : 849666 on tinygpu
+= Job-Name           : DinoV2_optuna_winding_large_ten_freezing
+= Job-Command        : /home/woody/iwfa/iwfa054h/batch.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 07:07:03
+= Total RAM usage    : 3.4 GiB of requested  GiB (%)   
+= Node list          : tg090
+= Subm/Elig/Start/End: 2024-06-30T09:21:15 / 2024-06-30T09:21:15 / 2024-06-30T09:21:15 / 2024-06-30T16:28:18
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           69.1G   104.9G   209.7G        N/A     167K     500K   1,000K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:81:00.0, 2219045, 96 %, 11 %, 1936 MiB, 25546003 ms

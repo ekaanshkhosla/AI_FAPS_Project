@@ -1,0 +1,193 @@
+### Starting TaskPrologue of job 844217 on tg093 at Tue 18 Jun 2024 10:57:06 PM CEST
+Running on cores 32-63 with governor ondemand
+Tue Jun 18 22:57:06 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   40C    P0             56W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[I 2024-06-18 22:57:46,360] Using an existing study with name 'DinoV2_optuna_winding_large2' instead of creating a new one.
+Best trial's number:  82
+Best score: 0.9255057673201671
+Best hyperparameters:
+image_size: 224
+batch_size: 4
+learning_rate: 1e-06
+fc_units: 512
+fc_units_2: 256
+Number of trials completed: 22
+Number of pruned trials: 66
+Total number of trails completed: 88
+Number of trials to run: 12
+==================== Training of trial number:93 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0007500000
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[I 2024-06-18 23:17:58,078] Trial 93 pruned. 
+Epoch 1/100, Training Loss: 0.6420, Training F1-score: 0.1697, Validation Loss: 0.6313, Validation F1-score: 0.2304
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:94 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0000010000
+Fully connected units: 128
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-18 23:35:59,908] Trial 94 pruned. 
+Epoch 1/100, Training Loss: 0.1995, Training F1-score: 0.9480, Validation Loss: 0.1998, Validation F1-score: 0.9062
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:95 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0002500000
+Fully connected units: 2048
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-18 23:54:01,379] Trial 95 pruned. 
+Epoch 1/100, Training Loss: 0.4154, Training F1-score: 0.6986, Validation Loss: 0.4310, Validation F1-score: 0.6259
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:96 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0000005000
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 00:14:12,897] Trial 96 pruned. 
+Epoch 1/100, Training Loss: 0.1214, Training F1-score: 0.9474, Validation Loss: 0.1472, Validation F1-score: 0.8834
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:97 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0005000000
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 00:34:16,443] Trial 97 pruned. 
+Epoch 1/100, Training Loss: 0.6420, Training F1-score: 0.1696, Validation Loss: 0.6297, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:98 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0001000000
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 00:54:19,574] Trial 98 pruned. 
+Epoch 1/100, Training Loss: 0.6419, Training F1-score: 0.1809, Validation Loss: 0.6297, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:99 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0000010000
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 01:14:22,475] Trial 99 pruned. 
+Epoch 1/100, Training Loss: 0.1026, Training F1-score: 0.9532, Validation Loss: 0.1471, Validation F1-score: 0.9048
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:100 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0000002500
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 01:34:25,696] Trial 100 pruned. 
+Epoch 1/100, Training Loss: 0.1529, Training F1-score: 0.9348, Validation Loss: 0.1584, Validation F1-score: 0.9035
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:101 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0000025000
+Fully connected units: 512
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 01:52:26,555] Trial 101 pruned. 
+Epoch 1/100, Training Loss: 0.0967, Training F1-score: 0.9537, Validation Loss: 0.1593, Validation F1-score: 0.8458
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:102 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0000001000
+Fully connected units: 512
+Fully connected units: 128
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 02:12:29,420] Trial 102 pruned. 
+Epoch 1/100, Training Loss: 0.1985, Training F1-score: 0.9124, Validation Loss: 0.1743, Validation F1-score: 0.8957
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:103 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.0000010000
+Fully connected units: 2048
+Fully connected units: 256
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 02:30:35,012] Trial 103 pruned. 
+Epoch 1/100, Training Loss: 0.0953, Training F1-score: 0.9484, Validation Loss: 0.1625, Validation F1-score: 0.8750
+Best F1-score till now on Validation data: 0.9255057673201671
+==================== Training of trial number:104 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.0000100000
+Fully connected units: 512
+Fully connected units: 2048
+Best F1-score on Validation data until now: 0.9255057673201671
+[I 2024-06-19 02:50:42,645] Trial 104 pruned. 
+Epoch 1/100, Training Loss: 0.3672, Training F1-score: 0.7191, Validation Loss: 0.4244, Validation F1-score: 0.6574
+Best F1-score till now on Validation data: 0.9255057673201671
+Best trial's number:  82
+Best score: 0.9255057673201671
+Best hyperparameters:
+image_size: 224
+batch_size: 4
+learning_rate: 1e-06
+fc_units: 512
+fc_units_2: 256
+=== JOB_STATISTICS ===
+=== current date     : Wed 19 Jun 2024 02:50:52 AM CEST
+= Job-ID             : 844217 on tinygpu
+= Job-Name           : DinoV2_optuna_winding_large
+= Job-Command        : /home/woody/iwfa/iwfa054h/batch.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 03:53:48
+= Total RAM usage    : 2.8 GiB of requested  GiB (%)   
+= Node list          : tg093
+= Subm/Elig/Start/End: 2024-06-18T22:21:31 / 2024-06-18T22:21:31 / 2024-06-18T22:57:04 / 2024-06-19T02:50:52
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           69.0G   104.9G   209.7G        N/A     167K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:41:00.0, 666437, 97 %, 21 %, 9448 MiB, 13983035 ms
