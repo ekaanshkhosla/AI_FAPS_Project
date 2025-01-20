@@ -1,0 +1,83 @@
+### Starting TaskPrologue of job 883984 on tg093 at Fri 30 Aug 2024 05:51:53 PM CEST
+Running on cores 32-63 with governor ondemand
+Fri Aug 30 17:51:53 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   42C    P0             56W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Epoch 1/5, Training Loss: 0.0916, Training F1-score: 0.9548, Validation Loss: 0.1397, Validation F1-score: 0.9160
+Epoch 2/5, Training Loss: 0.0464, Training F1-score: 0.9749, Validation Loss: 0.1248, Validation F1-score: 0.8834
+Epoch 3/5, Training Loss: 0.0365, Training F1-score: 0.9790, Validation Loss: 0.1676, Validation F1-score: 0.9171
+Epoch 4/5, Training Loss: 0.0295, Training F1-score: 0.9825, Validation Loss: 0.1526, Validation F1-score: 0.9106
+Epoch 5/5, Training Loss: 0.0243, Training F1-score: 0.9854, Validation Loss: 0.1714, Validation F1-score: 0.9154
+Test F1-score: 0.9362
+Epoch 1/5, Training Loss: 0.0943, Training F1-score: 0.9544, Validation Loss: 0.1232, Validation F1-score: 0.9224
+Epoch 2/5, Training Loss: 0.0486, Training F1-score: 0.9738, Validation Loss: 0.1249, Validation F1-score: 0.9111
+Epoch 3/5, Training Loss: 0.0380, Training F1-score: 0.9787, Validation Loss: 0.1404, Validation F1-score: 0.9156
+Epoch 4/5, Training Loss: 0.0313, Training F1-score: 0.9816, Validation Loss: 0.1556, Validation F1-score: 0.9057
+Epoch 5/5, Training Loss: 0.0257, Training F1-score: 0.9844, Validation Loss: 0.1610, Validation F1-score: 0.8914
+Test F1-score: 0.9432
+Epoch 1/5, Training Loss: 0.0912, Training F1-score: 0.9546, Validation Loss: 0.1398, Validation F1-score: 0.9100
+Epoch 2/5, Training Loss: 0.0459, Training F1-score: 0.9756, Validation Loss: 0.1580, Validation F1-score: 0.9103
+Epoch 3/5, Training Loss: 0.0371, Training F1-score: 0.9786, Validation Loss: 0.1633, Validation F1-score: 0.9122
+Epoch 4/5, Training Loss: 0.0290, Training F1-score: 0.9831, Validation Loss: 0.1693, Validation F1-score: 0.9094
+Epoch 5/5, Training Loss: 0.0251, Training F1-score: 0.9846, Validation Loss: 0.2086, Validation F1-score: 0.9060
+Test F1-score: 0.9341
+Epoch 1/5, Training Loss: 0.0935, Training F1-score: 0.9554, Validation Loss: 0.1300, Validation F1-score: 0.9133
+Epoch 2/5, Training Loss: 0.0483, Training F1-score: 0.9744, Validation Loss: 0.1513, Validation F1-score: 0.8930
+Epoch 3/5, Training Loss: 0.0371, Training F1-score: 0.9791, Validation Loss: 0.1592, Validation F1-score: 0.9088
+Epoch 4/5, Training Loss: 0.0303, Training F1-score: 0.9821, Validation Loss: 0.1745, Validation F1-score: 0.9124
+Epoch 5/5, Training Loss: 0.0258, Training F1-score: 0.9844, Validation Loss: 0.1612, Validation F1-score: 0.9142
+Test F1-score: 0.9292
+Epoch 1/5, Training Loss: 0.0917, Training F1-score: 0.9551, Validation Loss: 0.1401, Validation F1-score: 0.8968
+Epoch 2/5, Training Loss: 0.0471, Training F1-score: 0.9751, Validation Loss: 0.1427, Validation F1-score: 0.9093
+Epoch 3/5, Training Loss: 0.0371, Training F1-score: 0.9789, Validation Loss: 0.1552, Validation F1-score: 0.9110
+Epoch 4/5, Training Loss: 0.0296, Training F1-score: 0.9825, Validation Loss: 0.1592, Validation F1-score: 0.9100
+Epoch 5/5, Training Loss: 0.0246, Training F1-score: 0.9852, Validation Loss: 0.1863, Validation F1-score: 0.8976
+Test F1-score: 0.9355
+=== JOB_STATISTICS ===
+=== current date     : Sat 31 Aug 2024 10:13:25 AM CEST
+= Job-ID             : 883984 on tinygpu
+= Job-Name           : DinoV2_optuna_winding_large_testing_ten_aug_100-200
+= Job-Command        : /home/woody/iwfa/iwfa054h/batch.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 16:21:55
+= Total RAM usage    : 3.1 GiB of requested  GiB (%)   
+= Node list          : tg093
+= Subm/Elig/Start/End: 2024-08-30T08:51:17 / 2024-08-30T08:51:17 / 2024-08-30T17:51:30 / 2024-08-31T10:13:25
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           81.5G   104.9G   209.7G        N/A     168K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+    /home/woody        304.0G  1000.0G  1500.0G        N/A     364K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:41:00.0, 371500, 97 %, 21 %, 7114 MiB, 58739437 ms

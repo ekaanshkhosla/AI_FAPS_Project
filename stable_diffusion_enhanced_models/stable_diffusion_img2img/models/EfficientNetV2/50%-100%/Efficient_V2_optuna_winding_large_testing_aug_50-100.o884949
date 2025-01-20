@@ -1,0 +1,107 @@
+### Starting TaskPrologue of job 884949 on tg096 at Mon 02 Sep 2024 01:24:48 AM CEST
+Running on cores 0-31 with governor ondemand
+Mon Sep  2 01:24:48 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   36C    P0             53W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Epoch 1/5, Training Loss: 0.1462, Training F1-score: 0.9204, Validation Loss: 0.1959, Validation F1-score: 0.8913
+Epoch 2/5, Training Loss: 0.0475, Training F1-score: 0.9741, Validation Loss: 0.1948, Validation F1-score: 0.8853
+Epoch 3/5, Training Loss: 0.0340, Training F1-score: 0.9798, Validation Loss: 0.2149, Validation F1-score: 0.9029
+Epoch 4/5, Training Loss: 0.0276, Training F1-score: 0.9834, Validation Loss: 0.2035, Validation F1-score: 0.8838
+Epoch 5/5, Training Loss: 0.0219, Training F1-score: 0.9864, Validation Loss: 0.2184, Validation F1-score: 0.8795
+Test F1-score: 0.9242
+Epoch 1/5, Training Loss: 0.1438, Training F1-score: 0.9237, Validation Loss: 0.1861, Validation F1-score: 0.8631
+Epoch 2/5, Training Loss: 0.0469, Training F1-score: 0.9742, Validation Loss: 0.1596, Validation F1-score: 0.9042
+Epoch 3/5, Training Loss: 0.0347, Training F1-score: 0.9806, Validation Loss: 0.1811, Validation F1-score: 0.8860
+Epoch 4/5, Training Loss: 0.0272, Training F1-score: 0.9833, Validation Loss: 0.2016, Validation F1-score: 0.8952
+Epoch 5/5, Training Loss: 0.0227, Training F1-score: 0.9862, Validation Loss: 0.1745, Validation F1-score: 0.9031
+Test F1-score: 0.9243
+Epoch 1/5, Training Loss: 0.1400, Training F1-score: 0.9258, Validation Loss: 0.1956, Validation F1-score: 0.8921
+Epoch 2/5, Training Loss: 0.0499, Training F1-score: 0.9736, Validation Loss: 0.1895, Validation F1-score: 0.8885
+Epoch 3/5, Training Loss: 0.0354, Training F1-score: 0.9796, Validation Loss: 0.1901, Validation F1-score: 0.8736
+Epoch 4/5, Training Loss: 0.0280, Training F1-score: 0.9833, Validation Loss: 0.2115, Validation F1-score: 0.8966
+Epoch 5/5, Training Loss: 0.0230, Training F1-score: 0.9854, Validation Loss: 0.1815, Validation F1-score: 0.9051
+Test F1-score: 0.9389
+Epoch 1/5, Training Loss: 0.1454, Training F1-score: 0.9159, Validation Loss: 0.1963, Validation F1-score: 0.8770
+Epoch 2/5, Training Loss: 0.0498, Training F1-score: 0.9727, Validation Loss: 0.1822, Validation F1-score: 0.8991
+Epoch 3/5, Training Loss: 0.0343, Training F1-score: 0.9796, Validation Loss: 0.1836, Validation F1-score: 0.8919
+Epoch 4/5, Training Loss: 0.0277, Training F1-score: 0.9830, Validation Loss: 0.1730, Validation F1-score: 0.8943
+Epoch 5/5, Training Loss: 0.0231, Training F1-score: 0.9856, Validation Loss: 0.1953, Validation F1-score: 0.9007
+Test F1-score: 0.9199
+Epoch 1/5, Training Loss: 0.1440, Training F1-score: 0.9216, Validation Loss: 0.1862, Validation F1-score: 0.8766
+Epoch 2/5, Training Loss: 0.0472, Training F1-score: 0.9744, Validation Loss: 0.1754, Validation F1-score: 0.8788
+Epoch 3/5, Training Loss: 0.0340, Training F1-score: 0.9805, Validation Loss: 0.1799, Validation F1-score: 0.8840
+Epoch 4/5, Training Loss: 0.0263, Training F1-score: 0.9840, Validation Loss: 0.2020, Validation F1-score: 0.8883
+Epoch 5/5, Training Loss: 0.0221, Training F1-score: 0.9864, Validation Loss: 0.2151, Validation F1-score: 0.8735
+Test F1-score: 0.9262
+Epoch 1/5, Training Loss: 0.1429, Training F1-score: 0.9217, Validation Loss: 0.1904, Validation F1-score: 0.8933
+Epoch 2/5, Training Loss: 0.0483, Training F1-score: 0.9729, Validation Loss: 0.2186, Validation F1-score: 0.8649
+Epoch 3/5, Training Loss: 0.0340, Training F1-score: 0.9802, Validation Loss: 0.2161, Validation F1-score: 0.9049
+Epoch 4/5, Training Loss: 0.0279, Training F1-score: 0.9829, Validation Loss: 0.1950, Validation F1-score: 0.8538
+Epoch 5/5, Training Loss: 0.0228, Training F1-score: 0.9854, Validation Loss: 0.2194, Validation F1-score: 0.8780
+Test F1-score: 0.9181
+Epoch 1/5, Training Loss: 0.1410, Training F1-score: 0.9217, Validation Loss: 0.1672, Validation F1-score: 0.8757
+Epoch 2/5, Training Loss: 0.0476, Training F1-score: 0.9742, Validation Loss: 0.1740, Validation F1-score: 0.9017
+Epoch 3/5, Training Loss: 0.0343, Training F1-score: 0.9807, Validation Loss: 0.2038, Validation F1-score: 0.8922
+Epoch 4/5, Training Loss: 0.0269, Training F1-score: 0.9835, Validation Loss: 0.1972, Validation F1-score: 0.8803
+Epoch 5/5, Training Loss: 0.0221, Training F1-score: 0.9862, Validation Loss: 0.1908, Validation F1-score: 0.8977
+Test F1-score: 0.9297
+Epoch 1/5, Training Loss: 0.1423, Training F1-score: 0.9226, Validation Loss: 0.2083, Validation F1-score: 0.8362
+Epoch 2/5, Training Loss: 0.0475, Training F1-score: 0.9749, Validation Loss: 0.1867, Validation F1-score: 0.8861
+Epoch 3/5, Training Loss: 0.0350, Training F1-score: 0.9804, Validation Loss: 0.2016, Validation F1-score: 0.8842
+Epoch 4/5, Training Loss: 0.0268, Training F1-score: 0.9836, Validation Loss: 0.1829, Validation F1-score: 0.9062
+Epoch 5/5, Training Loss: 0.0230, Training F1-score: 0.9853, Validation Loss: 0.2366, Validation F1-score: 0.8641
+Test F1-score: 0.9121
+Epoch 1/5, Training Loss: 0.1423, Training F1-score: 0.9245, Validation Loss: 0.1804, Validation F1-score: 0.8947
+Epoch 2/5, Training Loss: 0.0466, Training F1-score: 0.9746, Validation Loss: 0.2309, Validation F1-score: 0.8742
+Epoch 3/5, Training Loss: 0.0331, Training F1-score: 0.9806, Validation Loss: 0.1866, Validation F1-score: 0.8945
+Epoch 4/5, Training Loss: 0.0275, Training F1-score: 0.9826, Validation Loss: 0.1890, Validation F1-score: 0.8887
+Epoch 5/5, Training Loss: 0.0220, Training F1-score: 0.9862, Validation Loss: 0.2010, Validation F1-score: 0.8825
+Test F1-score: 0.9114
+Epoch 1/5, Training Loss: 0.1385, Training F1-score: 0.9260, Validation Loss: 0.2236, Validation F1-score: 0.8594
+Epoch 2/5, Training Loss: 0.0464, Training F1-score: 0.9751, Validation Loss: 0.1981, Validation F1-score: 0.8827
+Epoch 3/5, Training Loss: 0.0329, Training F1-score: 0.9807, Validation Loss: 0.1839, Validation F1-score: 0.8846
+Epoch 4/5, Training Loss: 0.0268, Training F1-score: 0.9838, Validation Loss: 0.1921, Validation F1-score: 0.8849
+Epoch 5/5, Training Loss: 0.0224, Training F1-score: 0.9863, Validation Loss: 0.2446, Validation F1-score: 0.8914
+Test F1-score: 0.9222
+=== JOB_STATISTICS ===
+=== current date     : Mon 02 Sep 2024 07:44:26 AM CEST
+= Job-ID             : 884949 on tinygpu
+= Job-Name           : Efficient_V2_optuna_winding_large_testing_aug_50-100
+= Job-Command        : /home/woody/iwfa/iwfa054h/batch.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 06:19:45
+= Total RAM usage    : 2.1 GiB of requested  GiB (%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-09-01T10:01:23 / 2024-09-01T10:01:23 / 2024-09-02T01:24:41 / 2024-09-02T07:44:26
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           81.5G   104.9G   209.7G        N/A     169K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+    /home/woody        305.4G  1000.0G  1500.0G        N/A     364K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 2058707, 54 %, 17 %, 5788 MiB, 22749509 ms
